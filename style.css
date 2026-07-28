@@ -122,10 +122,127 @@ header{
     border-radius: 20px;
     cursor: pointer;
     color:black;
+    transition: 0.3s;
 
 
 }
 
-.hero-info
+.hero-info button:hover{
 
+    background-color: transparent;
+    color: white;
+    box-shadow: 0 0 15px
+}
+
+.hero-info{
+    z-index: 1;
+    position: absolute;
+    top:80px;
+    left:50px;
+
+}
+
+.hero-info h1{
+    font-size:120px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight:900;
+    font-style:normal;
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+
+}
+
+.hero-info p{
+    color: white;
+    max-width: 210px;
+
+}
+
+.hero-info button{
+    background-color:#edff66;
+    border:2px solid #edff66;
+    padding: 10px 40px;
+    border-radius: 20px;
+    cursor:pointer;
+    color : black;
+    transition: 0.3s;
+
+
+
+}
+.hero-info button:hover{
+    background-color: transparent;
+    color:white;
+    box-shadow:0 0 15px #edff66;
+
+
+}
+
+.gaming-text{
+    font-size: 120px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 0;
+    position: absolute;
+    right: 20px;
+    bottom: 30px;
+
+
+}
+
+.next-btn{
+    background-color: #edff66b6;
+    position: absolute;
+    left:45%;
+    bottom:45%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size : 30px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index:100;
+    opacity:0;
+    transition:0.5s;
+
+
+}
+
+.next-btn:hover{
+    width: 200px;
+    height: 200px;
+    opacity: 1;
+    box-shadow: 0 0 15px rgba(255,255,255,0.616);
+}
+
+
+.next-btn{
+    width: 200px;
+    height: 200px;
+    background-color:#edff66b6;
+    position: absolute;
+    left: 45%;
+    bottom: 45%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:black;
+    font-size: 30px;
+    font-weight:bold;
+    cursor: pointer;
+    z-index: 100;
+    opacity: 0;
+    transition: 0.5s;
+
+}
+
+.next-btn:hover{
+    width: 200px;
+    height: 200px;
+    opacity: 1;
+    box-shadow: 0 0 15px rgba(255,255,255,0.616);
+}
 
