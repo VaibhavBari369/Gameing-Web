@@ -282,7 +282,7 @@ header{
 
 }
 
-.about-setion h1{
+.about-section h1{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 900;
     font-size:100px;
@@ -319,6 +319,22 @@ header{
     text-align: center;
     line-height: 25px;
 
+}
+
+.info-section{
+    display: flex;
+    flex-direction:column;
+    position: relative;
+    width: 80%;
+    margin-top: 100px;
+
+}
+
+.info-section h3{
+    margin-top: 5px;
+    color: gray;
+    max-width: 25px;
+    line-height: 25px;
 }
 
 
