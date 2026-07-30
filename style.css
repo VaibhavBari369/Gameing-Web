@@ -312,7 +312,7 @@ header{
 
 }
 
-.about-section h4{
+.about-section h5{
     margin-top: 5px;
     color: gray;
     max-width: 425px;
@@ -331,10 +331,32 @@ header{
 }
 
 .info-section h3{
+    margin-bottom: 0;
+}
+
+.info-section p{
     margin-top: 5px;
     color: gray;
-    max-width: 25px;
+    max-width: 400px;
     line-height: 25px;
 }
 
+.ingo-cards{
+    display:grid;
+    grid-template-columns: auto auto;
+    gap:20px;
+    width: 100%;
+    height: 100%;
+    margin-top: 30px;
+}
+
+.card{
+    position:relative;
+    width: auto;
+    height: 40vh;
+    overflow: hidden;
+    border:1px solid gray;
+    border-radius: 20px;
+    transition: 0.5s;
+}
 
