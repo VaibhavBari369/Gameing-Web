@@ -429,6 +429,43 @@ header{
 
 .card:nth-child(2){
     grid-row: span 2;
-    height: 83;
+    height: 83vh;
 }
 
+
+.contact-section{
+    position: relative;
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 200px;
+    display: flex; 
+    flex-direction: column;
+    align-items:center;
+    height: 100vh;
+}
+
+.contact-section .img1{
+    position: absolute;
+    top: 10%;
+    right: 20px;
+    height: 400px;
+    clip-path: polygon(32% 0, 94% 0, 74% 100%, 0% 100%);
+
+}
+
+.contact-section .img2{
+    position: absolute;
+    left:50px;
+    top: 10px;
+    height: 200;
+    clip-path: polygon(35% 6%, 75% 0%,100% 50%, 75% 100%, 36% 95%,8% 49%);
+}
+
+.contact-section .img3{
+    position: absolute;
+    left: 5%;
+    bottom: 10%;
+    height: 250px;
+    width: 250px;
+    clip-path: polygon(52% 5%,100% 38%, 82% 100%, 34% 93%, 0% 38%);
+}
