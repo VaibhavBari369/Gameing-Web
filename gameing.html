@@ -3,132 +3,180 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>gameing</title>
-    <link rel="Stylesheet" href="style.css">
+    <meta name="description" content="Zentry Gaming — Discover the world's largest shared adventure. Enter the metagame layer and unleash the play economy with RADIANT, ZIGMA, NEXUS, and AZUL.">
+    <title>Zentry — Redefine Gaming</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <div class="head-left">
-                <img src="img/logo.png" alt="logo">
-                <button>Products</button>
+    <!-- Loading Screen -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-ring">
+                <div></div><div></div><div></div><div></div>
             </div>
-            
+            <h2>ZENTRY</h2>
+            <p>Loading the Metagame...</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <header id="main-header">
+            <div class="head-left">
+                <img src="img/logo.png" alt="Zentry Logo">
+                <button id="products-btn">Products</button>
+            </div>
+
             <div class="head-right">
-                <p><a href='#'>NEXUS</a></p>
-                <p><a href='#'></a>VAULT</p>
-                <p><a href='#'></a>ABOUT</p>
-                <p><a href='#'></a>SERVICES</p>
-                <p><a href='#'></a>CONTANT</p>
+                <p><a href="#hero">NEXUS</a></p>
+                <p><a href="#about">VAULT</a></p>
+                <p><a href="#about">ABOUT</a></p>
+                <p><a href="#info">SERVICES</a></p>
+                <p><a href="#contact">CONTACT</a></p>
+                <a href="../Web-front-end/vaibhav.html" class="shop-link" title="Visit ShopVerse Store">
+                    <i class="fa-solid fa-bag-shopping"></i> Shop
+                </a>
+                <a href="../Music-Web/index.html" class="music-link" title="Listen on SoundWave">
+                    <i class="fa-solid fa-headphones"></i> Music
+                </a>
             </div>
         </header>
-        <section class ="hero-section">
-            <div class ="hero-vid">
-                <video loop autoplay muted plays-inline class="hero-video">
-                    <source src ="videos/hero-1.mp4" type="video/mp4">
+
+        <section class="hero-section" id="hero">
+            <div class="hero-vid">
+                <video loop autoplay muted playsinline class="hero-video">
+                    <source src="videos/hero-1.mp4" type="video/mp4">
                 </video>
 
-                <div class="hero-info">
+                <div class="hero-info fade-element">
                     <h1>REDEFINE</h1>
-                    <p>Enter the metagame Layer Unleash the paly Economy</p>
-                    <button>Watch Trailer</button>
+                    <p>Enter the metagame layer. Unleash the play economy.</p>
+                    <button id="trailer-btn">
+                        <i class="fa-solid fa-play"></i> Watch Trailer
+                    </button>
                 </div>
 
                 <h1 class="gaming-text">Gaming</h1>
-                <div class="next-btn">
-                    NEXT
+                <div class="next-btn" id="next-btn">
+                    <span>NEXT</span>
+                    <i class="fa-solid fa-arrow-right"></i>
                 </div>
-
-
             </div>
-
         </section>
 
-        <section class="about-section">
-            <p> Welcome to Zentry</p>
-            <h1>DISCOVER THE WORLD'S LARGEST SHARED ADVENTURE</h1>
+        <section class="about-section" id="about">
+            <p class="section-tag fade-element">Welcome to Zentry</p>
+            <h1 class="about-title fade-element">DISCOVER THE WORLD'S LARGEST SHARED ADVENTURE</h1>
 
-            <div class="image-box">
-                <img src="img/about.webp" alt ="about-img">
-
+            <div class="image-box fade-element">
+                <img src="img/about.webp" alt="Zentry About - Shared Adventure">
             </div>
-            <h4> Game of Games begins-your lif , now an epix mmorpg</h4>
-            <h5> Zentry unites every player from countless games and platforms , both digital and physicla, into a unified Play Economy </h5>
+            <h4 class="fade-element">The Game of Games begins — your life, now an epic MMORPG</h4>
+            <h5 class="fade-element">Zentry unites every player from countless games and platforms, both digital and physical, into a unified Play Economy</h5>
         </section>
-        
-        <section class="info-section">
-            <h3>Into the Metagame Layer</h3>
-            <p> A cross-platform metagame app , turnig your activites across web2 and web3 games into a re</p>
+
+        <section class="info-section" id="info">
+            <h3 class="fade-element">Into the Metagame Layer</h3>
+            <p class="fade-element">A cross-platform metagame app, turning your activities across Web2 and Web3 games into a rewarding experience</p>
 
             <div class="info-cards">
-                <div class="card">
+                <div class="card fade-element" id="card-radiant">
                     <h1>RADIANT</h1>
-                    <p> An anime and gaming-inspired NFT collection - the IP Primed for expansion.</p>
-
-                    <video src="videos/feature-1.mp4" autoplay loop muted plays-inline></video>
+                    <p>An anime and gaming-inspired NFT collection — the IP primed for expansion.</p>
+                    <video src="videos/feature-1.mp4" autoplay loop muted playsinline></video>
                     <button>COMING SOON</button>
-
                 </div>
 
-                <div class="card">
+                <div class="card fade-element" id="card-zigma">
                     <h1>ZIGMA</h1>
-                    <p>A cross-platform metagame app, turnig your activities across web2 abd web3 games into a rewarding</p>
-
-                    <video src="videos/feature-2.mp4" autoplay loop muted plays-inline></video>
+                    <p>A cross-platform metagame app, turning your activities across Web2 and Web3 games into a rewarding experience.</p>
+                    <video src="videos/feature-2.mp4" autoplay loop muted playsinline></video>
                     <button>COMING SOON</button>
-
                 </div>
 
-                <div class="card">
+                <div class="card fade-element" id="card-nexus">
                     <h1>NEXUS</h1>
-                    <p> A gamified social hub, adding a new dimension of play to social interaction for web3 communities .</p>
-
-                    <video src="videos/feature-3.mp4" autoplay loop muted plays-inline></video>
+                    <p>A gamified social hub, adding a new dimension of play to social interaction for Web3 communities.</p>
+                    <video src="videos/feature-3.mp4" autoplay loop muted playsinline></video>
                     <button>COMING SOON</button>
-
                 </div>
 
-                <div class="card">
+                <div class="card fade-element" id="card-azul">
                     <h1>AZUL</h1>
-                    <p>A Cross-world AI Afent - elevating your gameplay to be more fun and productive.</p>
-
-                    <video src="videos/feature-4.mp4" autoplay loop muted plays-inline></video>
+                    <p>A cross-world AI Agent — elevating your gameplay to be more fun and productive.</p>
+                    <video src="videos/feature-4.mp4" autoplay loop muted playsinline></video>
                     <button>COMING SOON</button>
-
                 </div>
 
-                <div class="card">
-                    <video src="videos/feature-5.mp4" autoplay loop muted plays-inline></video> 
-
+                <div class="card fade-element" id="card-video">
+                    <video src="videos/feature-5.mp4" autoplay loop muted playsinline></video>
                 </div>
 
-                <div class="card">
-                    <h1>MORE COMIG SOON</h1>
-                </div>     
+                <div class="card card-more fade-element" id="card-more">
+                    <h1>MORE COMING SOON</h1>
+                    <div class="card-more-dots">
+                        <span></span><span></span><span></span>
+                    </div>
+                </div>
             </div>
         </section>
-        <Section class="contact-section">
-            <p>Join Zentry</p>
-            <h1>LET'S BUILD THE NEW ERA OF GAMING ROGEHER</h1>
-            <button>CONTACT</button>
-            <img class="img1" src="img/swordman.webp" alt="contact-img">
-            <img class="img2" src="img/contact-1.webp" alt="contact-img">
-            <img class="img3" src="img/contact-2.webp" alt="contact-img">
-        </Section>
 
+        <section class="contact-section" id="contact">
+            <p class="section-tag fade-element">Join Zentry</p>
+            <h1 class="fade-element">LET'S BUILD THE NEW ERA OF GAMING TOGETHER</h1>
+            <button class="contact-btn fade-element" id="contact-btn">
+                <i class="fa-solid fa-envelope"></i> CONTACT US
+            </button>
+            <img class="img1" src="img/swordman.webp" alt="Swordman character">
+            <img class="img2" src="img/contact-1.webp" alt="Gaming character">
+            <img class="img3" src="img/contact-2.webp" alt="Gaming world">
+        </section>
 
-
-        
-        
-
-
-
-
-
+        <!-- Footer -->
+        <footer class="site-footer">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <img src="img/logo.png" alt="Zentry Logo" class="footer-logo">
+                    <p>Redefining the metagame layer.<br>Unite. Play. Earn.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Ecosystem</h4>
+                        <a href="#info">Radiant</a>
+                        <a href="#info">Zigma</a>
+                        <a href="#info">Nexus</a>
+                        <a href="#info">Azul</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <a href="#about">About</a>
+                        <a href="#contact">Contact</a>
+                        <a href="#">Careers</a>
+                        <a href="#">Blog</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Connect</h4>
+                        <a href="../Web-front-end/vaibhav.html"><i class="fa-solid fa-bag-shopping"></i> ShopVerse</a>
+                        <a href="../Music-Web/index.html"><i class="fa-solid fa-headphones"></i> SoundWave</a>
+                        <a href="#"><i class="fa-brands fa-discord"></i> Discord</a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i> Twitter</a>
+                        <a href="#"><i class="fa-brands fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Zentry Gaming. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </footer>
     </div>
 
-    
     <script src="aap.js"></script>
-    
 </body>
 </html>
