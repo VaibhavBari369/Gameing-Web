@@ -284,6 +284,32 @@ header.scrolled {
     box-shadow: 0 0 20px rgba(155, 89, 182, 0.6) !important;
 }
 
+/* Movie Link */
+.movie-link {
+    display: flex !important;
+    align-items: center;
+    gap: 6px;
+    text-decoration: none !important;
+    color: white !important;
+    background: linear-gradient(135deg, #ff0040, #ff6b35);
+    padding: 8px 20px !important;
+    border-radius: 25px;
+    font-weight: 700 !important;
+    font-size: 0.8rem !important;
+    letter-spacing: 1px;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 0 10px rgba(255, 0, 64, 0.3);
+}
+
+.movie-link::after {
+    display: none !important;
+}
+
+.movie-link:hover {
+    transform: scale(1.05) !important;
+    box-shadow: 0 0 20px rgba(255, 0, 64, 0.6) !important;
+}
+
 /* === Hero Section === */
 .hero-section {
     position: relative;
