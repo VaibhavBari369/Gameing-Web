@@ -13,7 +13,7 @@ const jwt = require('jsonwebtoken');
 const path = require('path');
 require('dotenv').config({ path: path.join(__dirname, '..', '.env') });
 
-const { getDB } = require('./database');
+const { getDB, initDB } = require('./database');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -402,20 +402,22 @@ app.use((err, req, res, next) => {
 // Start Server
 // ============================================
 
-app.listen(PORT, () => {
-    console.log('');
-    console.log('  ╔══════════════════════════════════════╗');
-    console.log('  ║    🎮  Zentry Gaming API Server  🎮   ║');
-    console.log('  ╠══════════════════════════════════════╣');
-    console.log(`  ║  Local:  http://localhost:${PORT}         ║`);
-    console.log('  ║  Status: Running                      ║');
-    console.log('  ╚══════════════════════════════════════╝');
-    console.log('');
-
-    // Initialize database on startup
-    getDB();
+// Initialize database then start server
+initDB().then(() => {
     console.log('  [DB] Database initialized successfully');
-    console.log('');
+    app.listen(PORT, () => {
+        console.log('');
+        console.log('  ╔══════════════════════════════════════╗');
+        console.log('  ║    🎮  Zentry Gaming API Server  🎮   ║');
+        console.log('  ╠══════════════════════════════════════╣');
+        console.log(`  ║  Local:  http://localhost:${PORT}         ║`);
+        console.log('  ║  Status: Running                      ║');
+        console.log('  ╚══════════════════════════════════════╝');
+        console.log('');
+    });
+}).catch(err => {
+    console.error('  [DB] Failed to initialize database:', err.message);
+    process.exit(1);
 });
 
 module.exports = app;
